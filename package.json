@@ -8,7 +8,7 @@
 	},
 	"main": "server.js",
 	"scripts": {
-		"start": "nodemon server.js",
+		"start": "node server.js",
 		"heroku": "node server.js",
 		"test": "cross-env NODE_ENV=test mocha --timeout=5000 --file test/server.test.js",
 		"cover": "nyc --reporter=lcov npm test"
