@@ -1,3 +1,10 @@
 language: node_js
 node_js: node
 services: mongodb
+deploy:
+  provider: heroku
+  api_key:
+    secure: iGJ/YI7o8z8/Z/YGaEpKYlLWzvWEN/6yEOaxg4J1aB2klzFcoiGfGz3AjFvR0mMb+x6v6Zgutvzlu1ChGKDDZnVOo9gcvfDouav5hYrgLTnxmPE3kv9Q34Llo907UCFS+LUoox/VnlaUqC8SJMb+zKVCC6+mIZpfzrU1hIEPd1eheffoBg2Yr+mT3DwyCrbE/rPWb4lOBqJEvtnwru6y4cnh4aIlaJhwQzRha8WWiIoQ1vpEt5znwIaKHEi/HF4TJp9e0SRSvANseK7JG2jscm8hcDsxXgfQqdwDjAYDcp/7eNJSJhwFY/Bjb6XMOljCEcup+ZEnE6SFA8v8+CHvRQ8xcdHAdl0d/USB8aZhMvBJXY6rqKM8DH47fX+ppK5oaSDUX4wQyfzgPpdYMSDtDkCSnLItaKOwmOBXRzhDbH8jA1xvPbPuCW64Ax4at7E8ixNOFhAJmPbcUmoC57BHpnbwMongMdgSzkEqvcu90akLj28E3wDZT3VKVDUUw93ZncdVTajB645WKGFXz8lZwgeMsDSYXAxtrcs55wqef+WMvvIuh+ZSxBFC5C1Kao7SwQgLtHGpBbU6VN6rf/+ZhE4wTK3LpQpbEwQZBSlWEFZ2WqJlr0GvHVRkki0GvDd2zx2sIGh3x/FgsYs41TWs6j0c2jmD0XAhO0e0OmA5EXM=
+  app: blooming-lowlands-77404
+  on:
+    repo: chagoy/noteful-app-v4
