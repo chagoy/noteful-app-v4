@@ -120,7 +120,7 @@ describe('Noteful api - login', function() {
                 .then(res => {
                     expect(res).to.have.status(401);
                 });
-        });
+        }); 
 
         it('should reject requests with expired tokens', function() {
             token = jwt.sign({ username, password, fullname }, JWT_SECRET, { subject: username, expiresIn: Math.floor(Date.now() / 1000) - 10 });
